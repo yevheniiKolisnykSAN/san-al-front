@@ -1,1 +1,14 @@
-<p>catalog-card works!</p>
+<div class="card-container">
+  <img class="card-img" src="/assets/placeholders/product.png" alt="">
+
+  <div class="card-body">
+    <p class="name">Product Name</p>
+    <p class="short-description">
+      {{'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda facere iusto officiis repudiandae. Commodi debitis dicta ipsa itaque necessitatibus quidem!' | cutText : 30}}
+    </p>
+  </div>
+  <div class="card-footer">
+    <p class="price">{{ 200 | currency : 'PLN' : 'symbol'}}</p>
+    <p-button icon="pi pi-plus" />
+  </div>
+</div>

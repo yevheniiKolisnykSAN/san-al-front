@@ -1,4 +1,4 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import {Pipe, PipeTransform} from '@angular/core'
 
 @Pipe({
   name: 'cutText',
@@ -6,8 +6,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class CutTextPipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(value: string, maxLength: number): string {
+    return `${value.slice(0, maxLength).trimEnd()}...`
   }
 
 }

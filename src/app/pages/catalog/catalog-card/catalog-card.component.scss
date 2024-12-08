@@ -1,0 +1,42 @@
+@import "../../../../styles/variables";
+
+.card-container {
+  width: 300px;
+  border: 1px solid $border-color;
+  border-radius: 7px;
+  padding: 1rem 1.5rem;
+
+  .card-img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 7px;
+  }
+
+  .card-body {
+    .name {
+      color: $text-color;
+    }
+
+    .short-description {
+      color: $text-color-secondary;
+    }
+  }
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .price {
+      color: $text-color;
+    }
+
+    ::ng-deep p-button {
+      .p-button {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+}
